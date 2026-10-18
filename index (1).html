@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para mi abuela y mis tías 🌸</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:ital,wght@0,500;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Flores de lapacho cayendo -->
+  <div id="petals"></div>
+
+  <!-- ENTRADA: sobre / carta -->
+  <section id="intro">
+    <div class="envelope" id="envelope">
+      <div class="env-back"></div>
+      <div class="letter">
+        <p class="letter-small">Para mi abuela y mis tías</p>
+        <h1>Feliz Día<br>de las Madres</h1>
+        <p class="letter-guarani">Rohayhuete ❤</p>
+      </div>
+      <div class="env-front"></div>
+      <div class="env-flap"></div>
+      <div class="seal">
+        <svg viewBox="0 0 40 40" id="sello"></svg>
+      </div>
+    </div>
+    <p class="hint">Tocá el sobre para abrirlo</p>
+  </section>
+
+  <!-- PRESENTACIÓN -->
+  <main id="show" class="hidden">
+    <div class="slides" id="slides"></div>
+    <nav class="controls">
+      <button id="prev" aria-label="Anterior">‹</button>
+      <div id="dots" class="dots"></div>
+      <button id="next" aria-label="Siguiente">›</button>
+    </nav>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
